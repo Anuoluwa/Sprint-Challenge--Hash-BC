@@ -26,11 +26,12 @@ def proof_of_work(last_proof):
     # proof = 0
     #  TODO: Your code here
     # create a random offset
+    proof = random.randint(100000, 1000000)
 
     # get the hash of the last proof
     last_hash = hashlib.sha256(f"{last_proof}".encode()).hexdigest()
 
-    new_proof = f"{last_hash}{proof}".encode()
+    # new_proof = f"{last_hash}{proof}".encode()
 
     new_proof = f"{proof}".encode()
 
