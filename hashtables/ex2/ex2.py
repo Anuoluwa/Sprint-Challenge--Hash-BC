@@ -20,7 +20,7 @@ def reconstruct_trip(tickets, length):
         # add the tickets source/destination to the hashtable as a pair
         hash_table_insert(hashtable, ticket.source, ticket.destination)
 
-    source = "NONE"
+    source = ""
     position = 0
 
     while position < length:
